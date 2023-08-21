@@ -1,0 +1,3 @@
+Protocol 1 evaluates the cross-medium performance of various spoof types. 
+This protocol includes 3 macro types of spoof, where each covers 3 micro types of spoof. These three macro types of spoof are ``print'', ``repay'' and ``paper cut''. In detail, in each macro type of spoof, we choose 2 of their micro type of spoof for training, and the others for testing. Specifically, ``A4'', ``face mask'' and ``PC''  are selected for testing.
+
