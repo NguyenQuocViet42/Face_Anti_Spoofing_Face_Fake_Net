@@ -20,4 +20,4 @@ class Spatial_Attention(nn.Module):
         feat = torch.cat([avg_feat, max_feat], dim=1)
         out_feat = self.conv(feat)
         attention = self.sigmoid(out_feat)
-        return attention*x
+        return attention

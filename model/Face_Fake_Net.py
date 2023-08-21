@@ -1,4 +1,7 @@
 import torch
+import os
+import sys
+sys.path.append(os.getcwd()+'/model')
 from Backbone_44 import Backbone_44
 from Channel_Attention import Channel_Attention
 from Spatial_Attention import Spatial_Attention

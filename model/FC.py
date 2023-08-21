@@ -11,9 +11,10 @@ class FC(nn.Module):
         self.fc3 = nn.Linear(4096, 10)
 
     def forward(self, x):
-        y = torch.relu(self.fc1(x))
+        y = self.fc1(x)
         y = self.norm_1(y)
+        y = torch.relu(y)
         y = torch.relu(self.fc2(y))
-        y = self.norm_2(y)
+        # y = self.norm_2(y)
         y = torch.softmax(self.fc3(y), dim = 1)
         return y

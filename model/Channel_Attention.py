@@ -27,4 +27,4 @@ class Channel_Attention(nn.Module):
         max_out = self.excitation(max_feat)
         # attention
         attention = self.sigmoid(avg_out + max_out)
-        return attention * x
+        return attention
